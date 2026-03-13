@@ -28,11 +28,11 @@ function playRound(humanChoice, computerChoice) {
     )
         {
             humanScore++;
-            console.log('You win! ${humanChoice} beats ${comptuerChoice}.');
+            console.log(`You win! ${humanChoice} beats ${comptuerChoice}.`);
         }
         else {
             computerScore++;
-            console.log('You lose! ${computerChoice} beats ${humanChoice}.');
+            console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
         }
 }
 
@@ -43,7 +43,7 @@ function playGame() {
         playRound(humanChoice, computerChoice);
     }
 
-    console.log('Final Score - You: ${humanScore}, Computer: ${computerScore}.');
+    console.log(`Final Score - You: ${humanScore}, Computer: ${computerScore}.`);
     if (humanScore > computerScore) {
         console.log("Congratulations! You win the game!");
     } else if (humanScore < computerScore) {
