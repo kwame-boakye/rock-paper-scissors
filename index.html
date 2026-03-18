@@ -4,11 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-    <script src="/Users/kelvinboakye/repos/rock-paper-scissors/rps.js"></script>
+    <h1>Rock Paper Scissors</h1>
+
+    <div id="score">
+        You: 0 | Computer: 0
+    </div>
+
+    <div id="controls">
+        <button id="rockBtn" type="button">Rock</button>
+        <button id="paperBtn" type="button">Paper</button>
+        <button id="scissorsBtn" type="button">Scissors</button>
+    </div>
+
+    <div id="result" aria-live="polite" style="margin-top: 12px;"></div>
+
+    <script src="rps.js" defer></script>
 </body>
 
 </html>
